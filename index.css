@@ -24,7 +24,7 @@ grid-template-columns: 50% 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(67, 209, 252);
    
 
 }
@@ -90,4 +90,12 @@ button:hover{
         box-shadow: #30374c;
          border: 2px solid blue;
         transition:1s ease;     
+}
+.heroimg >img{
+     width:100%;
+     height:150%;
+    border-radius: 20px;
+    margin-top: 100px;
+    object-fit: contain;
+  
 }
