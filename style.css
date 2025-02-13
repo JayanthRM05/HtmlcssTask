@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    font-family: sans-serif;
+display: grid;
+grid-template-columns: 30% 30% 40%;
+grid-gap: 10px;
+margin-top: 10px;
+}
+.container >div{
+    background-color: aqua;
+    padding: 10px;
+
+}
+
+.container >div:nth-child(odd){
+    background-color: #ddd;
+}
+
+.card1{
+    background-color: rgb(226, 79, 79);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+   border-radius: 10px;
+   position: relative;
+
+}
+img{
+    border-radius: 50%;
+}
+.element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px
+}
+.card2{
+ background-image: url("abstract-background-illustration-yellow-abstract-background-with-simple-shape-vector.jpg");
+  background-size: cover;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+   border-radius: 10px;
+}
+
+table{
+    margin-top: 20px;
+    width:500px;
+}
+
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd){
+
+    background-color: aquamarine;
+}
+.button{
+    margin-top: 10px;
+    width:350px;
+    height:40px;
+    border-radius: 5px;
+    background: linear-gradient(91.04deg, #61E9A9 -15.43%, #3497DB 48.55%, #9D42F1 110.03%);
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    color:rgba(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
