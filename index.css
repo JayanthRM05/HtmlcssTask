@@ -77,11 +77,17 @@ label{
     margin:10px
 }
 button{
-    
+    cursor: pointer;
     border-radius: 5px;
     height:30px;
     margin-top: 20px;
 } 
 button:hover{
-    background-color: blue;
+    
+        background-color: rgb(234, 108, 108);
+        color: rgb(245, 245, 249);
+        cursor: pointer;
+        box-shadow: #30374c;
+         border: 2px solid blue;
+        transition:1s ease;     
 }
