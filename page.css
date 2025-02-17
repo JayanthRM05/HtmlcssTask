@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+ scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.214);
+
+}
+.nav{
+    width:100%;
+    height:4.5rem;
+    background-color: #fefefe;
+    box-shadow: 0 4px 16px rgba(206, 212, 240, .8);
+    display: block;
+    }
+    .navmenu{
+    width:100%;
+    height:4.5rem;
+    background-color:  #fefefe;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(206, 212, 240, .8);   
+    }
+    .button1{
+        width:6em;
+        height:2em;
+        border: 2px solid blue;
+        display: flex;
+        font-family: sans-serif;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        color: blue;
+    }
+    .button1:hover{
+        background-color: blue;
+        color: #fefefe;
+        cursor: pointer;
+        box-shadow: #30374c;
+        
+    }
+    .button2{
+        width:6em;
+        height:2em;
+        background-color: blue;
+        display: flex;
+        font-family: sans-serif;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        color: white;
+    }
+    .button2:hover{
+        background-color: white;
+        color: blue;
+        cursor: pointer;
+        box-shadow: #30374c;
+         border: 2px solid blue;
+        transition:1s ease;}
+    
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right:100px;
+        gap:10px;
+       
+    }
+    .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    }
+    a{
+        font-family: sans-serif;
+        padding:20px;
+        color:#30374c;
+        text-decoration: none;
+        cursor: pointer;
+    
+    }
+    .menu >a:hover{
+        background-color: aqua;
+        border-radius: 20px;
+        border: 1px solid black;
+        transition: all;
+    }
+    .Hero{
+        display: flex;
+        justify-content: center;
+    
+       
+        height:100vh;
+        background: url(pngtree-beautiful-background-of-high-rise-buildings-image_1947772.jpg);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover;
+    }
+    .Hero:hover{
+        box-shadow: 0 4px 16px rgb(9, 48, 220);
+
+    }
+@keyframes slideInLeft{
+     from{
+        transform: translateX(-300px);
+     }
+     to{
+        transform:translateX(0px);
+     }
+   
+}
+.intro{
+
+    animation:slideInLeft 1s ease-in;
+
+  
+}
+
+    .intro{
+        font-family: sans-serif;
+        color: blanchedalmond;
+        font-size:50px;
+        text-align: center;
+    }
+    .container {
+        height: 50vh;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: dodgerblue;
+        padding: 10px;
+         column-gap: 50px;
+        
+
+      }
+      .container > div {
+        background-color: #f1f1f1;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        
+      }
+      .one{
+        background-image: url(download\ \(1\).jpg);
+        background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    transition: transform 0.3s ease;
+      }
+      .two{
+        background-image: url(images\ \(1\).jpg);
+        background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    transition: transform 0.3s ease;
+
+      }
+      .three{
+        background-image: url(images\ \(2\).jpg);
+        background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    transition: transform 0.3s ease;
+      }
+      .one:hover,.two:hover,.three:hover{
+        transform: translateY(-10px);
+        cursor: pointer;
+        box-shadow:   0 4px 16px rgb(247, 247, 248); 
+        transition: all;
+      }
