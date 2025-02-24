@@ -1,0 +1,45 @@
+#myDiv1, #myDiv2 {
+    width: 50%;
+    background-color: rgb(32, 181, 226);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+
+  }
+  
+  #myP1, #myP2 {
+    background-color: white; 
+    font-size: 20px;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+  
+    
+  }
+  #myp1:hover{
+    background-color: aqua;
+
+  }
+  h2{
+    text-align: center;
+  }
+  body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #myBtn{
+    font-family: sans-serif;
+    background-color: rgb(25, 120, 203);
+    margin: 20px;
+    width: 150px;
+    height: 80px;
+    border-radius: 20px;
+  }
+   #myBtn:hover{
+    width: 200px;
+    background-color: brown;
+
+   }
