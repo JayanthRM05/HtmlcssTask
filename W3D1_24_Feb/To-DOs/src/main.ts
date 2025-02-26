@@ -37,23 +37,38 @@ const generateTodoItem =( title:string, isCompleted:boolean,id:string) =>
   checkBox.setAttribute("type", "checkbox")
   checkBox.className="isCompleted";
   checkBox.checked = isCompleted;
+  checkBox.onchange =()=>{
+
+    todos.find(item=>{
+      if(item.id===id)item.isCompleted = checkBox.checked
+    })
+    paragraph.className = checkBox.checked ? "textCut" : "";
+  }
   //creatin paragraph for title
   const paragraph : HTMLParagraphElement = document.createElement("p");
   paragraph.innerText= title;
+  paragraph.className = isCompleted? "textCut" : "";
   // Creating Delete Button
    const btn :HTMLButtonElement = document.createElement("button");
    btn.innerHTML ="X";
    btn.className = "deleteBtn";
+   btn.onclick =()=>{
+    deleteTodo(id )
+   }
 
   //Apending All to do Item
 
   todo.append(checkBox,paragraph, btn);
   todosContainer.append(todo);
 }
-
+const deleteTodo = (id:string) =>{
+  const idx = todos.findIndex(item=>item.id===id);
+  todos.splice(idx,1)
+  renderTodo(todos);
+}
 
 const renderTodo = (todos:Todo[])=>{
-  todosContainer.innerText = ""
+  todosContainer.innerText = "";
   todos.forEach(item=>{
     generateTodoItem(item.title, item.isCompleted, item.id)
   })
