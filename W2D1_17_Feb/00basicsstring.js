@@ -54,5 +54,5 @@ let kumar=jayanth
 kumar.name ="kumar"
 kumar.course="js"
 console.log(kumar);
-console.log(jayanth.name);
+console.log(kumar.name);
 console.log(jayanth.course);
