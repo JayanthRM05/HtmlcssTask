@@ -12,7 +12,7 @@ function App() {
       </nav>
      <div className="container">
       <div className="one"><h1>left</h1></div> 
-      <div className="two"><h1>Main</h1></div>
+      <div className="two"><h1>Main </h1></div>
       <div className="three"><h1>Right</h1></div>
      </div>
      <div className="footer">
