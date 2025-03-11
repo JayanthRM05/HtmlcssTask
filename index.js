@@ -26,8 +26,6 @@
 //         return
 
 //     }
-
-
 // }
 
 // let myName ="jayanth"
@@ -101,3 +99,12 @@
 // let b = 25;
 // console.log(a === b);//strict type check
 
+let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+function outPut(){
+    return (
+       alert(lengths)
+       
+    )
+}
+
+outPut()

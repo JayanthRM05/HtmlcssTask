@@ -17,7 +17,7 @@ function calculateResult() {
 
 function evaluateExpression(expression) {
     let tokens = expression.match(/\d+|[.+\-*/%]/g);
-    if (!tokens) return "";
+    if (!tokens) {return ""};
     let stack = [], operator = null;
     while (tokens.length) {
         let token = tokens.shift();
@@ -32,7 +32,7 @@ function evaluateExpression(expression) {
                     case '-': stack.push(prevNum - num); break;
                     case '*': stack.push(prevNum * num); break;
                     case '/': stack.push(prevNum / num); break;
-                  
+
                 }
                 operator = null;
             } else {
