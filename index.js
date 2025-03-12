@@ -8,6 +8,96 @@
 // function sayHello() {
 //     console.log("Hello, Jai!");
 // };
+// let myAge=(Math.floor(Math.random()*10)+20)
+// function herAge(myAge) {
+//  let age = [];
+//     for( let i=50;i>=myAge;i--){
+//      age.push(i +"")
+//         }
+     
+//         console.log(typeof age);
+        
+//     return age;
+    
+    
+// }
+// console.log(myAge);
+// console.log(herAge(myAge));
+
+// const myAge=[20,30,50,60]
+// const sum =myAge[0]+myAge[1]+myAge[2]+myAge[3]
+// const total = 4
+// const average=sum/total
+// console.log(average);
+
+//++++++++functions++++++++
+// let myName = [25,'kumar','nayak'];
+// function Luckey(myNumber,yourNumber){
+    
+//    myName[0]+ myNumber +yourNumber
+    
+// }
+// Luckey(10,5)
+// console.log(myName);
+ 
+// function getLicance( age, bribe){
+//     if(age>18 && bribe>100){
+//         console.log('yougetLicense')
+//         return   
+//     } else{}
+// }
+
+// getLicance(19,101)
+
+   let evenNumber=[]
+   let oddNumbers=[]
+   for(let i=0;i<=10;i++){
+    if(i%2 === 0){
+     evenNumber.push(i)}else {
+        oddNumbers.push(i)
+}
+  }
+ console.log(evenNumber);
+ console.log(oddNumbers);
+ 
+
+let str ="jayanth"
+let reverseString=[]
+for(let i=0; i<str.length;i++){
+    reverseString.unshift(str[i])
+}
+console.log(reverseString);
+
+
+
+
+function generateId() {
+  return Math.floor(Math.random() * 10001);
+}
+
+console.log(generateId());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let myName = sayHello();
 //  console.log(myName);
@@ -99,12 +189,10 @@
 // let b = 25;
 // console.log(a === b);//strict type check
 
-let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
-function outPut(){
-    return (
-       alert(lengths)
-       
-    )
-}
-
-outPut()
+// let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+// function outPut(){
+//     return (
+//        console.log( lengths)
+//     )
+// }
+// outPut()
